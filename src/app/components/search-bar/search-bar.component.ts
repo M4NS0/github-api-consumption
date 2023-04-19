@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-bar',
@@ -9,9 +10,11 @@ import { FormControl } from '@angular/forms';
 export class SearchBarComponent {
   searchInput = new FormControl('');
 
+  constructor(private router: Router) { }
+
+
   onSearch() {
-    console.log(this.searchInput.value);
+       this.router.navigate(['/profile'], { queryParams: { q: this.searchInput.value } });
   }
-  
 }
 
