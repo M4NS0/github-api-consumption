@@ -7,13 +7,14 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
-
+import { NavbarComponent } from './pages/profile-page/components/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     SearchBarComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

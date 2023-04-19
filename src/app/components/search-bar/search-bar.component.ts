@@ -14,7 +14,7 @@ export class SearchBarComponent {
 
 
   onSearch() {
-       this.router.navigate(['/profile'], { queryParams: { q: this.searchInput.value } });
+       this.router.navigate(['/profile'], { queryParams: { data: this.searchInput.value } });
   }
 }
 
