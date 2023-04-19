@@ -1,10 +1,9 @@
-<div class="user-profile-container">
-    <div class="row container">
-        <div class="col-4">
-            <app-user-details></app-user-details>
-        </div>
-        <div class="col-8">
-            <app-user-repositories></app-user-repositories>
-        </div>
+<div class="row justify-content-md-center ">
+    <div class="col-4">
+        <app-user-details [userDetails]="userDetails"></app-user-details>
+    </div>
+    <div class="col-md-auto"></div>
+    <div class="col-7">
+        <app-user-repositories [userRepositories]="userRepositories"></app-user-repositories>
     </div>
 </div>
