@@ -5,15 +5,15 @@
 npm install -g @angular/cli
 ```
 
-## Node installation
+## Instalação do Node
 https://nodejs.org/
 
-## Bootstrap installation
+## Instalação do Bootstrap
 ```sh
 npm install bootstrap
 ```
 
-adicionar em angular.json:
+### Adicionar em angular.json:
 ```sh
 "styles": [
   "node_modules/bootstrap/dist/css/bootstrap.min.css",
