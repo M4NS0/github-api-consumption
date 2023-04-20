@@ -47,5 +47,4 @@ Outras vantagens são: a construção de grids para organização do layout e ta
 ## Estrutura
 A estrutura de pastas segue a convenção dos pardrões de desenvolvimento em Angular. Foi utilizada uma estrutura aninhada, para deixar claro quem são os 'pais' e 'filhos' na aplicação, isso auxilia também no desenvolvimento clean-code, ajuda em code-reviews, no entendimento do projeto e manutenção do código.
 
-A estrutura foi componentizada, evitando grandes monólito e garantindo maior mantenabilidade, agilizando atualizações ou implementações de novas features. A componentização necessita dos devidos data-bindings para comunicação entre componentes. Isso ajuda na rapidez e dinamicidade da aplicação.
-Também devido à compomentização, foi possível usar o mesmo componente de busca, tanto na landing page, quanto na navbar.
+A estrutura foi componentizada, evitando grandes monólito e garantindo maior mantenabilidade, agilizando atualizações ou implementações de novas features. A componentização necessita dos devidos data-bindings para comunicação entre componentes e isso ajuda na rapidez e dinamicidade da aplicação (SPA). Também devido à compomentização, foi possível usar o mesmo componente de busca, tanto na landing page, quanto na navbar.
