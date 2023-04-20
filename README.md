@@ -40,7 +40,7 @@ ng build
 ```
 
 ## Escolha de libs
-Foi escolhido o bootstrap para integrar o projeto, devido ao tempo curto e a facilidade para impelemntação, mantém o código limpo sem excesso de classes css/scss. Também ajuda a definir espaçamentos padronizados e outros tipos de padronizações,mantendo um padrão de layout. 
+Foi escolhido o bootstrap para integrar o projeto, devido ao tempo curto e a facilidade para implemntação. Ajudando a definir espaçamentos e padrões de layouts, entre outros tipos de padronizações.
 
 Outras vantagens são: a construção de grids para organização do layout e também a redução de códigos em scss, suas classes seriam alteradas apenas quando extritameente necessário.
 
