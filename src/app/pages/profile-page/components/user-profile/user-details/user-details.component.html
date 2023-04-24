@@ -1,0 +1,64 @@
+<div class=" p-4 user-detail-container">
+    <div class="row mb-3">
+        <div class="col-3 mt-1">
+            <img [src]="userDetails.avatar_url" class="rounded-circle img-size">
+        </div>
+
+        <div class="col-9 d-flex flex-column">
+            <label for="name" class="text-config"> {{userDetails.name}} </label>
+            <label for="username" class="opacity-50"> @{{userDetails.username}} </label>
+        </div>
+    </div>
+    <span class="opacity-75 mt-2">{{userDetails.bio}}</span>
+
+    <div class="d-flex mt-4">
+        <img [src]="dataList[0].url" class="icon-size">
+        <label for="data" class="opacity-50 ms-2"> {{userDetails.followers}} seguidores </label>
+    </div>
+
+    <div class="d-flex mt-2 mb-4">
+        <img [src]="dataList[1].url" class="icon-size">
+        <label for="data" class="opacity-50 ms-2"> {{userDetails.following}} seguindo </label>
+    </div>
+
+    <div [ngStyle]="{'display': userDetails.company ? 'block' : 'none'}">
+        <div class="d-flex mt-2">
+            <img [src]="dataList[2].url" class="icon-size">
+            <label for="data" class="opacity-50 ms-2"> {{userDetails.company}} </label>
+        </div>
+    </div>
+    
+    <div [ngStyle]="{'display': userDetails.location ? 'block' : 'none'}">
+        <div class="d-flex mt-2">
+            <img [src]="dataList[3].url" class="icon-size">
+            <label for="data" class="opacity-50 ms-2"> {{userDetails.location}} </label>
+        </div>
+    </div>
+
+    <div [ngStyle]="{'display': userDetails.email ? 'block' : 'none'}">
+        <div class="d-flex mt-2">
+            <img [src]="dataList[4].url" class="icon-size">
+            <label for="data" class="opacity-50 ms-2"> {{userDetails.email}} </label>
+        </div>
+    </div>
+
+
+    <div [ngStyle]="{'display': userDetails.organizations_url ? 'block' : 'none'}">
+        <div class="d-flex mt-2">
+            <img [src]="dataList[5].url" class="icon-size">
+            <label for="data" class="opacity-50 ms-2 break-word"> {{userDetails.organizations_url}} </label>
+        </div>
+    </div>
+
+    <div [ngStyle]="{'display': userDetails.twitter_username ? 'block' : 'none'}">
+        <div class="d-flex mt-2">
+            <img [src]="dataList[6].url" class="icon-size">
+            <label for="data" class="opacity-50 ms-2"> {{userDetails.twitter_username}} </label>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-5">
+    <button class="btn btn-primary w-100">Contato</button>
+</div>
+

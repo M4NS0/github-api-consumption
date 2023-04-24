@@ -1,27 +1,72 @@
 # GithubApiConsumption
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Instalação do Angular
+```sh
+npm install -g @angular/cli
+```
 
-## Development server
+## Node installation
+https://nodejs.org/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Bootstrap installation
+=======
+## Instalação do Node
+https://nodejs.org/
 
-## Code scaffolding
+## Instalação do Bootstrap
+```sh
+npm install bootstrap
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+adicionar em angular.json:
+### Adicionar em angular.json:
+```sh
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+],
+"scripts": [
+  "node_modules/jquery/dist/jquery.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+]
+```
+## Instalação do projeto
+```sh
+npm i
+```
+
+## Rodando projeto em modo dev
+```sh
+ng s --o
+```
 
 ## Build
+```sh
+ng build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Escolha de libs
+Foi escolhido o bootstrap para integrar o projeto
+Devido ao tempo curto e a facilidade para impelemntação, mantém o código limpo sem excesso de classes css/scss
+Também ajuda a definir espaçamentos padronizados e outras padronizações, como padrão de código auxiliando o clean-code
+Outra vantagem é na construção de grids para organização do layout
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Estrutura
+A estrutura de pastas segue a convensão dos pardrões de desenvolvimento em angular.
+Foi utilizada uma estrutura aninhada, para deixar claro quem são os 'pais' e 'filhos' na aplicação, 
+auxiliando também no clean-code e entendimento do projeto.
+A estrutura foi componentizada, evitando grandes 'monólitos' e sendo assim fácil de se manter, atualizar ou implementar novas features.
+A componentização necessita dos devidos data-bindings para comunicação entre componentes. Isso ajuda na agilidade e dinamicidade da aplicação.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Escolha de libs
+Foi escolhido o bootstrap para integrar o projeto, devido ao tempo curto e a facilidade para implemntação. Ajudando a definir espaçamentos e padrões de layouts, entre outros tipos de padronizações.
 
-## Further help
+Outras vantagens são: a construção de grids para organização do layout e também a redução de códigos em scss, suas classes seriam alteradas apenas quando extritameente necessário.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Estrutura
+A estrutura de pastas segue a convenção dos pardrões de desenvolvimento em Angular. Foi utilizada uma estrutura aninhada, para deixar claro quem são os 'pais' e 'filhos' na aplicação, isso auxilia também no desenvolvimento clean-code, ajuda em code-reviews, no entendimento do projeto e manutenção do código.
+
+A estrutura foi componentizada, evitando grandes monólito e garantindo maior mantenabilidade, agilizando atualizações ou implementações de novas features. A componentização necessita dos devidos data-bindings para comunicação entre componentes e isso ajuda na rapidez e dinamicidade da aplicação (SPA). Também devido à compomentização, foi possível usar o mesmo componente de busca, tanto na landing page, quanto na navbar.
+

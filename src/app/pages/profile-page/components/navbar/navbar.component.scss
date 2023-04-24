@@ -1,0 +1,22 @@
+a {
+    font-size: 32px;
+    font-weight: normal;
+
+    span:first-child {
+        color: #0069CA;
+    }
+
+    span:last-child {
+        color: #8C19D2;
+    }
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-right: none;
+}
+
+
+.navbar-light {     
+    background-color: #fff !important;
+}
