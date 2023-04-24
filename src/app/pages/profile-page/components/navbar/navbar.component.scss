@@ -1,11 +1,5 @@
-.screen-height {
-    height: 100vh;
-}
-
-h1 {
-    font-size: 80px;
-    line-height: 109px;
-    letter-spacing: 0.01em;
+a {
+    font-size: 32px;
     font-weight: normal;
 
     span:first-child {
@@ -15,4 +9,9 @@ h1 {
     span:last-child {
         color: #8C19D2;
     }
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-right: none;
 }
