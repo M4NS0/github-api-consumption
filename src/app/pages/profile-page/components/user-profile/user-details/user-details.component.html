@@ -1,12 +1,15 @@
 <div class=" p-4 user-detail-container">
-    <div class="d-inline-flex mb-2">
-        <img [src]="userDetails.avatar_url" class="rounded-circle img-size img-fluid">
-        <div class="d-flex flex-column ms-5">
+    <div class="row mb-3">
+        <div class="col-3 mt-1">
+            <img [src]="userDetails.avatar_url" class="rounded-circle img-size">
+        </div>
+
+        <div class="col-9 d-flex flex-column">
             <label for="name" class="text-config"> {{userDetails.name}} </label>
             <label for="username" class="opacity-50"> @{{userDetails.username}} </label>
         </div>
     </div>
-    <span class="opacity-75">{{userDetails.bio}}</span>
+    <span class="opacity-75 mt-2">{{userDetails.bio}}</span>
 
     <div class="d-flex mt-4">
         <img [src]="dataList[0].url" class="icon-size">
@@ -53,5 +56,9 @@
             <label for="data" class="opacity-50 ms-2"> {{userDetails.twitter_username}} </label>
         </div>
     </div>
-
 </div>
+
+<div class="text-center mt-5">
+    <button class="btn btn-primary w-100">Contato</button>
+</div>
+

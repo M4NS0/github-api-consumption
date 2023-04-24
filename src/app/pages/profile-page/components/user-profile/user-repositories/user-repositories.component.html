@@ -1,8 +1,14 @@
 
 <div class="user-repositories-container p-4">
     <div  *ngFor="let repository of userRepositories">
-        <h3> {{repository.name}}</h3>
-        <p> {{repository.description}}</p>
+        <h4> {{repository.name}}</h4>
+        <p class="opacity-50"> {{repository.description}}</p>
+        <div class="d-inline-flex opacity-50">
+            <img src="../../../../../../assets/icons/star.svg" class="me-2">
+            <span class="me-2">{{repository.watchers}}</span>
+            <img src="../../../../../../assets/icons/bulletpoint.svg" class="me-2">
+            <span> Atualizado há {{getLastUpdate(repository)}}  </span>
+        </div>
+        <hr>
     </div>
-
 </div>

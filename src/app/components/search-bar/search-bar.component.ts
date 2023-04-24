@@ -48,7 +48,6 @@ export class SearchBarComponent {
     
     try {
       const data: any = await this.githubService.getUserDetails(username).toPromise();
-      
       if (data) {
         this.userDetails = {
           avatar_url: data.avatar_url,
@@ -74,11 +73,12 @@ export class SearchBarComponent {
   private async getUserRepositories(username: any): Promise<void> {
     try {
       const data: UserRepository[] = await this.githubService.getUserRepositories(username).toPromise() ?? [];
-
       data.forEach((element: UserRepository) => {
         let filteredData: UserRepository = {
           name: element.name,
           description: element.description,
+          updated_at: element.updated_at,
+          watchers: element.watchers
         }
         this.userRepositories.push(filteredData);
       });
