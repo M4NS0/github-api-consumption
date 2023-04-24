@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
