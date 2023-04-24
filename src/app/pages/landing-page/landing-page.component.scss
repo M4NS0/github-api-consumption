@@ -1,0 +1,19 @@
+.screen-height {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 109px;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    font-size: 80px;
+
+    span:first-child {
+        color: #0069CA;
+    }
+
+    span:last-child {
+        color: #8C19D2;
+    }
+}
