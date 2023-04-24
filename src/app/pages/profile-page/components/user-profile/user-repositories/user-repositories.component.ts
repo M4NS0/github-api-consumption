@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { UserRepository } from 'src/app/models/user-repository';
 
 @Component({
   selector: 'app-user-repositories',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-repositories.component.scss']
 })
 export class UserRepositoriesComponent {
-
+  @Input() userRepositories!: UserRepository[];
 }
